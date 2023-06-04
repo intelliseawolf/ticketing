@@ -1,0 +1,34 @@
+/* ------------Process section on HIW and Landing page start--------*/
+.process-mini-container {
+  position: relative;
+}
+
+.process-mini-container::after {
+  content: '';
+  height: 50px;
+  width: 45px;
+  position: absolute;
+  right: -72px;
+  top: 55%;
+  background-size: 45px;
+  background-repeat: no-repeat;
+}
+.process-mini-container-first-arrow::after {
+  right: -65px;
+}
+.process-mini-container-second-arrow::after {
+  right: -40px;
+}
+
+/*------responsiveness-fxes--------*/
+@media screen and (max-width:899px) {
+  .process-mini-container-first-arrow::after, .process-mini-container-second-arrow::after {
+    transform: rotate(90deg);
+    top: 100%;
+    left: calc(50% - 22px);
+  }
+  .sm-width-100 {
+    width: 100%;
+  }
+}
+/* ------------Process section on HIW and Landing page end--------*/
